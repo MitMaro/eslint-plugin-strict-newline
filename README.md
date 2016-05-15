@@ -31,4 +31,4 @@ This is an ESLint rule that warns against a missing newline after 'use strict'.
 
 ## License
 
-Combokeys Context is released under the ISC license. See [LICENSE](LICENSE.md).
+ESLint Strict Newline Plugin is released under the ISC license. See [LICENSE](LICENSE.md).
