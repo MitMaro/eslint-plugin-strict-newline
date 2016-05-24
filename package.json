@@ -22,7 +22,7 @@
     "eslint": "^2.9.0",
     "coveralls": "2.11.9",
     "istanbul": "0.4.3",
-    "mocha": "2.5.1"
+    "mocha": "2.5.2"
   },
   "keywords": [
     "eslint",
