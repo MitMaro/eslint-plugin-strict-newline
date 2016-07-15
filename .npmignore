@@ -1,0 +1,8 @@
+docs/
+reports/
+test/
+.eslintignore
+.eslintrc
+.istanbul.yml
+.travis.yml
+eslint-plugin-strict-newline-*.tgz
