@@ -1,8 +1,12 @@
 {
   "name": "eslint-plugin-strict-newline",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "ESLint plugin that provides a rule for newline spacing around 'use strict'",
-  "author": "Tim Oram @MitMaro <mitmaro@gmail.com>",
+  "author": "Tim Oram <mitmaro@gmail.com>",
+  "contributors": [
+    "Tim Oram <<mitmaro@gmail.com>",
+    "Arno Chauveau <arno.chaveau@delen.be>"
+  ],
   "main": "index.js",
   "engines": {
     "node": ">=4.0.0"

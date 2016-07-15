@@ -15,7 +15,6 @@ var foo = 'bar';
 var foo = 'bar';
 ```
 
-
 ## When Not To Use It
 
 You can turn this rule off if you are not concerned about a newline after 'use strict'.
