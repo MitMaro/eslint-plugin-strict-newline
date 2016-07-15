@@ -60,6 +60,15 @@ ruleTester.run('strict-newline', rule, {
 		{
 			code: '',
 			parserOptions: parserOptions
+		},
+		{
+			code: [
+				'(function(){',
+				'"use strict"',
+				'',
+				'var a;})()'
+			].join('\n'),
+			parserOptions: parserOptions
 		}
 	],
 
@@ -101,6 +110,24 @@ ruleTester.run('strict-newline', rule, {
 				'/*',
 				'comment',
 				'*/'
+			].join('\n'),
+			parserOptions: parserOptions,
+			errors: [{message: 'Expected newline after \'use strict\''}]
+		},
+		{
+			code: [
+				'(function(){',
+				'"use strict"',
+				'var a;})();'
+			].join('\n'),
+			parserOptions: parserOptions,
+			errors: [{message: 'Expected newline after \'use strict\''}]
+		},
+		{
+			code: [
+				'(function(){',
+				'"use strict";var a;',
+				'})();'
 			].join('\n'),
 			parserOptions: parserOptions,
 			errors: [{message: 'Expected newline after \'use strict\''}]
