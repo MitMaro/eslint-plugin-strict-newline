@@ -58,7 +58,7 @@ ruleTester.run('strict-newline', rule, {
 			parserOptions: parserOptions
 		},
 		{
-			code: '',
+			code: ' ',
 			parserOptions: parserOptions
 		},
 		{

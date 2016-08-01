@@ -23,15 +23,15 @@
     "unit-test": "mocha"
   },
   "devDependencies": {
-    "eslint": "^3.1.0",
     "coveralls": "2.11.12",
+    "eslint": "^3.2.0",
     "istanbul": "0.4.4",
-    "mocha": "2.5.3"
+    "mocha": "3.0.0"
   },
   "keywords": [
     "eslint",
     "eslint-plugin",
     "eslintplugin"
   ],
-  "license": "ICS"
+  "license": "ISC"
 }
