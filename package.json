@@ -23,10 +23,10 @@
     "unit-test": "mocha"
   },
   "devDependencies": {
-    "coveralls": "2.11.12",
+    "coveralls": "^2.11.12",
     "eslint": "^3.2.0",
     "istanbul": "0.4.4",
-    "mocha": "3.0.0"
+    "mocha": "^3.0.2"
   },
   "keywords": [
     "eslint",
