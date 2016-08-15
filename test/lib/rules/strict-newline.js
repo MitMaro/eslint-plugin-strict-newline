@@ -3,7 +3,9 @@
 var rule = require('../../../lib/rules/strict-newline');
 var RuleTester = require('eslint').RuleTester;
 
-var parserOptions = {};
+var parserOptions = {
+	ecmaVersion: 6
+};
 
 var ruleTester = new RuleTester();
 ruleTester.run('strict-newline', rule, {
@@ -69,6 +71,15 @@ ruleTester.run('strict-newline', rule, {
 				'var a;})()'
 			].join('\n'),
 			parserOptions: parserOptions
+		},
+		{
+			code: [
+				'(()=>{',
+				'"use strict"',
+				'',
+				'var a;})()'
+			].join('\n'),
+			parserOptions: parserOptions
 		}
 	],
 
@@ -126,6 +137,24 @@ ruleTester.run('strict-newline', rule, {
 		{
 			code: [
 				'(function(){',
+				'"use strict";var a;',
+				'})();'
+			].join('\n'),
+			parserOptions: parserOptions,
+			errors: [{message: 'Expected newline after \'use strict\''}]
+		},
+		{
+			code: [
+				'(()=>{',
+				'"use strict"',
+				'var a;})();'
+			].join('\n'),
+			parserOptions: parserOptions,
+			errors: [{message: 'Expected newline after \'use strict\''}]
+		},
+		{
+			code: [
+				'(()=>{',
 				'"use strict";var a;',
 				'})();'
 			].join('\n'),
