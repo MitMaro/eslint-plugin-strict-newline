@@ -11,6 +11,10 @@ var ruleTester = new RuleTester();
 ruleTester.run('strict-newline', rule, {
 	valid: [
 		{
+			code: 'var a;',
+			parserOptions: parserOptions
+		},
+		{
 			code: [
 				'"use strict"',
 				'',
