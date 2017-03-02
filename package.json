@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-strict-newline",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "ESLint plugin that provides a rule for newline spacing around 'use strict'",
   "author": "Tim Oram <mitmaro@gmail.com>",
   "contributors": [
